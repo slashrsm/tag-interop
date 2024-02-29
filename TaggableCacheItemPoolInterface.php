@@ -44,18 +44,4 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
      * @return bool True on success
      */
     public function invalidateTags(array $tags);
-
-    /**
-     * {@inheritdoc}
-     *
-     * @return TaggableCacheItemInterface
-     */
-    public function getItem($key): CacheItemInterface;
-
-    /**
-     * {@inheritdoc}
-     *
-     * @return array|\Traversable|TaggableCacheItemInterface[]
-     */
-    public function getItems(array $keys = []): iterable;
 }
